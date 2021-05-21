@@ -11,19 +11,13 @@
 //ausgabe(rechner(getOp(),10,4));
 
 // Modul: Operand eingeben | Test:
-ausgabe(getOp());
+//ausgabe(getOp());
 function getOp() {
-
   let op = prompt("Bitte + | - | * | / eingeben.")
-  
-  if (!isOpValid(op)) { // falsche eingabe
+  while (!isOpValid(op)) { // solange falsche eingabe --> schleife
       op = prompt("Bitte einen korrekten Operator eingeben!")
   }
-  else
-  {
     return op ; 
-  }
-
 }
 
 // Modul: Operand überprüfen | Test:
