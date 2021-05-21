@@ -8,13 +8,35 @@
 4. Ausgabe in Konsole :: check!
 */
 
+//ausgabe(rechner(getOp(),10,4));
+
+// Modul: Operand eingeben | Test:
+ausgabe(getOp());
+function getOp() {
+
+  let op = prompt("Bitte + | - | * | / eingeben.")
+  
+    if (isOpValid(op)) {
+        return op ; 
+    } else {
+        return "Bitte nochmal!"
+    }
+}
+
+function isOpValid(checkStr) {
+    // ...
+    return false;
+}
+
+
+
 // Modul: Rechenart auswählen | Tests:
-ausgabe(rechner("+",10,4));
-ausgabe(rechner("-",10,4));
-ausgabe(rechner("*",10,4));
-ausgabe(rechner("/",10,4));
-ausgabe(rechner("/",10,0));
-ausgabe(rechner("#?!",10,0));
+// ausgabe(rechner("+",10,4));
+// ausgabe(rechner("-",10,4));
+// ausgabe(rechner("*",10,4));
+// ausgabe(rechner("/",10,4));
+// ausgabe(rechner("/",10,0));
+// ausgabe(rechner("#?!",10,0));
 function rechner(op,a,b) {
     switch (op) {
         case "+":
@@ -29,7 +51,6 @@ function rechner(op,a,b) {
             return "Irgendwas ging schief!"
     }
 }
-
 
 // Modul: Division a / b |  Test:
 // ausgabe(dividieren(2,2));
