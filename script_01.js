@@ -8,6 +8,14 @@
 4. Ausgabe in Konsole :: check!
 */
 
+
+// Modul: Subtraktion a - b |  Test:
+// ausgabe(subtrahieren(2,1));
+// ausgabe(subtrahieren(2,10));
+function subtrahieren(a,b) {
+   return a - b; 
+}
+
 // Modul: Addition a + b |  Test:
 //ausgabe(addieren(2,1));
 function addieren(a,b) {
