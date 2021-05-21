@@ -2,17 +2,21 @@
 /*** Rechner */
 /*
 0. a+b / a-b/ a*b / a/b  // ergebnis c
-1. Dateneingabe + -überprüfung :: 
+1. Dateneingabe + -überprüfung :: check!
 2. Auswahl Rechenart :: check!
 3. Fkt. Grundrechenarten :: check!
 4. Ausgabe in Konsole :: check!
 */
 
-//ausgabe(rechner(getOp(),getZahl1(),4));
+// Gesamte Applikation:
+start();
+function start() {
+    ausgabe(rechner(getOp(),getZahl("1"),getZahl("2")))
+}
 
 // Modul: Zahl eingeben | Test:
-ausgabe(getZahl("1"));
-ausgabe(getZahl("2"));
+// ausgabe(getZahl("1"));
+// ausgabe(getZahl("2"));
 function getZahl(numStr) {
     let zahl = parseInt(prompt("Bitte Zahl " + numStr + " eingeben."))
     while (isNaN(zahl)){
@@ -20,7 +24,6 @@ function getZahl(numStr) {
     }
     return zahl;     
 }
-
 
 // Modul: Operand eingeben | Test:
 //ausgabe(getOp());
