@@ -11,7 +11,7 @@
 // Gesamte Applikation:
 start();
 function start() {
-    ausgabe(rechner(getOp(),getZahl("1"),getZahl("2")))
+    ausgabe(rechner(getZahl("1"),getOp(),getZahl("2")))
 }
 
 // Modul: Zahl eingeben | Test:
@@ -68,7 +68,7 @@ function isOpValid(op) {
 // ausgabe(rechner("/",10,4));
 // ausgabe(rechner("/",10,0));
 // ausgabe(rechner("#?!",10,0));
-function rechner(op,a,b) {
+function rechner(a,op,b) {
     switch (op) {
         case "+":
             return addieren(a,b);
