@@ -11,7 +11,7 @@
 //ausgabe(rechner(getOp(),10,4));
 
 // Modul: Operand eingeben | Test:
-ausgabe(getOp());
+//ausgabe(getOp());
 function getOp() {
 
   let op = prompt("Bitte + | - | * | / eingeben.")
@@ -23,9 +23,30 @@ function getOp() {
     }
 }
 
-function isOpValid(checkStr) {
-    // ...
-    return false;
+// Modul: Operand überprüfen | Test:
+ausgabe(isOpValid("+"));
+ausgabe(isOpValid("-"));
+ausgabe(isOpValid("*"));
+ausgabe(isOpValid("/"));
+ausgabe(isOpValid("#"));
+ausgabe(isOpValid(""));
+ausgabe(isOpValid());
+function isOpValid(op) {
+    
+    /*
+    switch (op) {
+        case "+":
+        case "-":
+        case "*":
+        case "/":
+            return true;
+        default:
+            return false;
+    }
+    */
+
+    return op == "+" || op == "-" || op == "*" || op == "/";
+    
 }
 
 
