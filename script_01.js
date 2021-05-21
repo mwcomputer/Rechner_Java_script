@@ -9,7 +9,7 @@
 */
 
 // Gesamte Applikation:
-start();
+//start();
 function start() {
     ausgabe(rechner(getZahl("1"),getOp(),getZahl("2")))
 }
@@ -116,6 +116,12 @@ function addieren(a,b) {
 
 // Modul: Konsolenausgabe |  Test:
 //ausgabe("Hallo Welt");
+//ausgabe(20);
 function ausgabe(outputStr) {
+    
+    if (typeof outputStr === "number"){
+        outputStr = "Das Ergebnis ist: " + outputStr;
+    }
+    
     console.log(outputStr);
 }
